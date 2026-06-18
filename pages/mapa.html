@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBrosConnect | Mapa de Gyms</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>GymBrosConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="perfiles.html">Comunidad</a></li>
+                <li><a href="rutinas.html">Muro de Rutinas</a></li>
+                <li><a href="academia.html">Academia Spotter</a></li>
+                <li><a href="mapa.html">Mapa de Gyms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- CONTENEDOR PRINCIPAL DOS COLUMNAS -->
+    <section class="mapa-layout">
+        
+        <!-- COLUMNA IZQUIERDA: BUSCADOR Y ESTÉTICA -->
+        <div class="mapa-col-izq">
+            <h2>Mapa de Gimnasios</h2>
+            <p class="mapa-bajada">Encontrá gimnasios cercanos y conectá con personas en tu zona para entrenar.</p>
+            
+            <!-- Buscador Interactivo Simulado -->
+            <div class="buscador-gims-box">
+                <input type="text" placeholder="Filtrá por barrio... Ej: Caballito, Villa Crespo">
+                <button type="button" onclick="alert('Mostrando los mejores templos de la zona seleccionada')">Buscar Spots</button>
+            </div>
+
+            <img src="../imagenes/estetica de gimnasio.jpeg" alt="Estética de gimnasio" class="mapa-img-fixed">
+        </div>
+
+        <!-- COLUMNA DERECHA: TARJETAS DE GIMNASIOS -->
+        <div class="mapa-col-der contenedor-gimnasios">
+            <h3>Gimnasios Destacados en la Zona</h3>
+            <p class="subtitulo-muro">Descubrí los mejores spots elegidos por la comunidad para tirar pesado:</p>
+
+            <!-- Tarjeta 1 -->
+            <article class="tarjeta-gym">
+                <h4>Fiter (Cid Campeador)</h4>
+                <p><strong>Ubicación:</strong> Caballito, Buenos Aires</p>
+                <p><strong>Destacado:</strong> Excelente ambiente, racks de sentadillas y equipamiento moderno ideal para rutinas exigentes.</p>
+                <span class="etiqueta-gym">Powerbuilding / Fitness</span>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="tarjeta-gym">
+                <h4>Coliseum Gym</h4>
+                <p><strong>Ubicación:</strong> Zona Caballito / Villa Crespo</p>
+                <p><strong>Destacado:</strong> Un templo de la vieja escuela. Mancuernas pesadas, discos de hierro y ambiente 100% enfocado a la fuerza e hipertrofia.</p>
+                <span class="etiqueta-gym">Hardcore / Old School</span>
+            </article>
+
+            <!-- Tarjeta 3 -->
+            <article class="tarjeta-gym">
+                <h4>SportClub / Megatlon</h4>
+                <p><strong>Ubicación:</strong> Múltiples sedes en la zona</p>
+                <p><strong>Destacado:</strong> Instalaciones amplias, gran variedad de máquinas guiadas, poleas y sectores de peso libre muy completos.</p>
+                <span class="etiqueta-gym">Cadena / Equipamiento Completo</span>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 GymBrosConnect - Creado por Máximo Rodrigo Olivera Nieva</p>
+    </footer>
+</body>
+</html>
