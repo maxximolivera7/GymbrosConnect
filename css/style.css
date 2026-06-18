@@ -1,0 +1,815 @@
+/* * RESET * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * BODY * */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000; /* Negro oscuridad absoluta */
+    color: white;
+    line-height: 1.6;
+}
+
+/* * HEADER * */
+header {
+    background-color: #0b0b0b; /* Encabezado casi negro */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #3dfc3b; /* Tu nuevo Verde Flúor */
+}
+
+header h1 {
+    color: #3dfc3b; /* Letras principales en Verde Flúor */
+    margin-bottom: 15px;
+}
+
+/* * NAV * */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3dfc3b; /* Iluminación Verde Flúor al pasar el mouse */
+}
+
+/* * MAIN * */
+main {
+    padding: 40px 20px;
+}
+
+main img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 6px;
+    border: 1px solid #1a1a1a;
+}
+
+/* * SECTIONS * */
+section {
+    margin-bottom: 50px;
+    background-color: #0a0a0a; /* Fondo de sección muy oscuro */
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #3dfc3b; /* Subtítulos en Verde Flúor */
+    margin-bottom: 15px;
+}
+
+/* * FORM (Muro de Rutinas) * */
+form {
+    margin-top: 20px;
+}
+
+.contenedor-formulario {
+    background-color: #111111; /* Gris carbono para resaltar del fondo */
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+    margin-top: 30px;
+    max-width: 600px;
+}
+
+.contenedor-formulario h3 {
+    color: #3dfc3b;
+    margin-bottom: 20px;
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #b3b3b3; /* Gris claro para etiquetas secundarias */
+}
+
+/* Estilos para inputs, select y cuadro de texto largo */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a1a1a; /* Fondo oscuro para las cajas */
+    color: white;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Cuando hacés clic para escribir, se ilumina en verde flúor */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3dfc3b;
+}
+
+/* Bloques para Kilos y Repes en paralelo */
+.bloque-ejercicio {
+    background-color: #161616;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 3px solid #3dfc3b; /* Línea flúor de diseño al costado */
+}
+
+.bloque-ejercicio h5 {
+    margin-bottom: 8px;
+    color: white;
+}
+
+.bloque-ejercicio input {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.bloque-ejercicio input:last-child {
+    margin-right: 0;
+}
+
+/* * TARGETAS GIMNASIOS (Mapa de Gyms) * */
+.contenedor-gimnasios {
+    margin-top: 30px;
+    max-width: 800px;
+}
+
+.contenedor-gimnasios h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.tarjeta-gym {
+    background-color: #111111; /* Gris carbono de fondo */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #222222;
+    transition: 0.3s;
+}
+
+/* Efecto pro: al pasar el mouse por el gym, brilla el borde en flúor */
+.tarjeta-gym:hover {
+    border-color: #3dfc3b;
+    transform: translateY(-2px);
+}
+
+.tarjeta-gym h4 {
+    color: #3dfc3b; /* Nombre del Gym en verde flúor */
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.tarjeta-gym p {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.etiqueta-gym {
+    display: inline-block;
+    background-color: rgba(61, 252, 59, 0.1); /* Fondo verde traslúcido */
+    color: #3dfc3b;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid rgba(61, 252, 59, 0.3);
+}
+
+/* * BUTTONS * */
+button, .btn-publicar {
+    background-color: #3dfc3b; /* Fondo Verde Flúor */
+    color: black; /* Letras negras para un contraste brutal */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover, .btn-publicar:hover {
+    background-color: white; /* Cambia a blanco al pasar el mouse */
+    color: black;
+}
+
+/* * FOOTER * */
+footer {
+    background-color: #0b0b0b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #3dfc3b;
+}
+
+
+/* --- ESTRUCTURA HERO (FOTO + FORMULARIO AL LADO) --- */
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Separa la foto del buscador */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Le damos mitad de espacio a cada caja */
+.hero-image-box, 
+.hero-form-box {
+    flex: 1;
+    width: 50%;
+}
+
+/* Domamos la foto vertical para que encaje estética en PC */
+.hero-img-fixed {
+    width: 100%;
+    height: 450px; /* Altura controlada */
+    object-fit: cover; /* Recorta de forma inteligente sin deformar */
+    border-radius: 8px;
+    border: 2px solid #1a1a1a;
+}
+
+/* Caja brutalista para el formulario */
+.hero-form-box {
+    background-color: #0a0a0a; 
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+}
+
+.hero-form-box h2 {
+    color: #3dfc3b; /* Tu verde flúor */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+} 
+/* --- SECCIÓN CARACTERÍSTICAS (TRES COLUMNAS BRUTALISTAS) --- */
+.caracteristicas-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tarjeta-caracteristica {
+    flex: 1;
+    background-color: #0a0a0a;
+    padding: 25px;
+    border-radius: 8px;
+    border-bottom: 3px solid #3dfc3b;
+    text-align: left;
+}
+
+.tarjeta-caracteristica h3 {
+    color: #3dfc3b;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tarjeta-caracteristica p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+/* --- SECCIÓN COMUNIDAD DISEÑO COMPACTO --- */
+.comunidad-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.comunidad-image-box, 
+.comunidad-share-box {
+    flex: 1;
+    width: 50%;
+}
+
+.comunidad-img-fixed {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #1a1a1a;
+}
+
+.comunidad-share-box {
+    background-color: #0a0a0a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+}
+
+.comunidad-share-box h2 {
+    color: #3dfc3b;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.comunidad-share-box p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.mini-post-form textarea {
+    width: 100%;
+    height: 80px;
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.mini-post-form textarea:focus {
+    outline: none;
+    border-color: #3dfc3b;
+}
+
+/* --- FEED DEL MURO DE COMUNIDAD --- */
+.titulo-muro {
+    max-width: 1200px;
+    margin: 20px auto 15px auto;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.muro-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+.tarjeta-post {
+    background-color: #0a0a0a;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3dfc3b; /* Línea verde característica al costado */
+    border-top: 1px solid #111111;
+    border-right: 1px solid #111111;
+    border-bottom: 1px solid #111111;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post-user {
+    color: #3dfc3b;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.post-tag {
+    background-color: #222222;
+    color: #cccccc;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.post-content {
+    color: #dddddd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+} 
+/* --- DISEÑO MURO DE RUTINAS (FOTO + FORMULARIO AL LADO) --- */
+.muro-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Distribución de las dos columnas */
+.muro-col-izq {
+    flex: 1;
+    width: 45%;
+    position: sticky;
+    top: 20px;
+}
+
+.contenedor-formulario.muro-col-der {
+    flex: 1;
+    width: 55%;
+    background-color: #0a0a0a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+}
+
+/* Control de la foto del muro */
+.muro-img-fixed {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #1a1a1a;
+    margin-top: 20px;
+}
+
+/* Ajustes para los campos del formulario */
+.grupo-campo, .bloque-ejercicio {
+    margin-bottom: 20px;
+}
+
+.contenedor-formulario h3 {
+    color: #3dfc3b;
+    margin-bottom: 15px;
+}
+/* --- SECCIÓN ACADEMIA INTERACTIVA (SIN IMÁGENES) --- */
+.academia-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Distribución simétrica 50% y 50% */
+.simulador-box {
+    flex: 1;
+    width: 50%;
+}
+
+.certificacion-box {
+    flex: 1;
+    width: 50%;
+    background-color: #0a0a0a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222222;
+}
+
+/* Estilos del Simulador (Lado Izquierdo) */
+.simulador-box h2 {
+    color: #3dfc3b; /* Tu verde flúor */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.simulador-bajada {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.caso-card {
+    background-color: #0a0a0a;
+    border: 1px solid #1c1c1c;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.caso-tag {
+    color: #3dfc3b;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.caso-pregunta {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.opciones-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-opcion {
+    background-color: #111111;
+    color: #cccccc;
+    border: 1px solid #252525;
+    padding: 12px 15px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-opcion:hover {
+    border-color: #3dfc3b;
+    color: #ffffff;
+    background-color: #151515;
+}
+
+/* Estilos del Panel de Rango y Formulario (Lado Derecho) */
+.certificacion-box h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.rango-status {
+    background-color: #111111;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border-left: 3px solid #3dfc3b;
+}
+
+.rango-status p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.rango-destacado {
+    color: #3dfc3b;
+    font-weight: bold;
+}
+
+.barra-progreso {
+    width: 100%;
+    height: 6px;
+    background-color: #222222;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progreso-verde {
+    width: 40%;
+    height: 100%;
+    background-color: #3dfc3b;
+}
+
+.titulo-form-academia {
+    color: #3dfc3b;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.bajada-form-academia {
+    color: #888888;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Campos de entrada rústicos */
+.campo-academia {
+    margin-bottom: 15px;
+}
+
+.campo-academia label {
+    display: block;
+    color: #cccccc;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.campo-academia input[type="text"],
+.campo-academia select {
+    width: 100%;
+    background-color: #111111;
+    border: 1px solid #333333;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.campo-academia input:focus,
+.campo-academia select:focus {
+    outline: none;
+    border-color: #3dfc3b;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+.btn-academia-submit {
+    width: 100%;
+    background-color: #3dfc3b;
+    color: #000000;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-academia-submit:hover {
+    background-color: #32d630;
+}
+/* --- SECCIÓN MAPA DE GIMNASIOS (DISEÑO HORIZONTAL) --- */
+.mapa-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* División de pantallas */
+.mapa-col-izq {
+    flex: 1;
+    width: 45%;
+    position: sticky;
+    top: 20px;
+}
+
+.mapa-col-der {
+    flex: 1;
+    width: 55%;
+}
+
+/* Estilos de la izquierda */
+.mapa-col-izq h2 {
+    color: #3dfc3b; /* Tu verde flúor */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.mapa-bajada {
+    color: #aaaaaa;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Caja del Buscador rústico */
+.buscador-gims-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.buscador-gims-box input {
+    flex: 1;
+    width: 100%; /* Esto obliga al cuadro a estirarse hacia la izquierda */
+    background-color: #0a0a0a;
+    border: 1px solid #333333;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.buscador-gims-box input:focus {
+    outline: none;
+    border-color: #3dfc3b;
+}
+
+.buscador-gims-box button {
+    width: auto; /* Anula el ancho completo para que no aplaste al input */
+    background-color: #3dfc3b;
+    color: #000000;
+    border: none;
+    padding: 0 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.mapa-img-fixed {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #1a1a1a;
+}
+
+/* Estilos de las tarjetas (Derecha) */
+.mapa-col-der h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.subtitulo-muro {
+    color: #888888;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.tarjeta-gym {
+    background-color: #0a0a0a;
+    border: 1px solid #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3dfc3b; /* Detalle brutalista verde al costado */
+}
+
+.tarjeta-gym h4 {
+    color: #3dfc3b;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta-gym p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.tarjeta-gym strong {
+    color: #ffffff;
+}
+
+.etiqueta-gym {
+    display: inline-block;
+    background-color: #151515;
+    color: #3dfc3b;
+    border: 1px solid #222222;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+/* * RESPONSIVE * */ 
+@media(max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .bloque-ejercicio input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .bloque-ejercicio input:last-child {
+        margin-bottom: 0;
+    }
+}
