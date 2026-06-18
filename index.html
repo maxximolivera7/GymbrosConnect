@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBrosConnect | Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <header>
+        <h1>GymBrosConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/perfiles.html">Comunidad</a></li>
+                <li><a href="pages/rutinas.html">Muro de Rutinas</a></li>
+                <li><a href="pages/academia.html">Academia Spotter</a></li>
+                <li><a href="pages/mapa.html">Mapa de Gyms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+<section class="hero-container">
+        <!-- Lado Izquierdo: La Foto Controlada -->
+        <div class="hero-image-box">
+            <img src="imagenes/sam-gym.jpeg" alt="Compañero asistiendo en press de banca" class="hero-img-fixed">
+        </div>
+
+        <!-- Lado Derecho: Tu Buscador Rápido -->
+        <div class="hero-form-box">
+            <h2>Buscador Rápido de Spotters</h2>
+            <form>
+                <label for="gym">Ubicación (Gimnasio):</label>
+                <input type="text" id="gym" name="gym" placeholder="Ej: Iron Gym">
+                
+                <label for="horario">Horario:</label>
+                <select id="horario" name="horario">
+                    <option value="manana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+                
+                <button type="submit">Buscar Compañero</button>
+            </form>
+        </div>
+    </section>
+
+ <!-- SECCIÓN EXTRA: PILARES DE LA COMUNIDAD -->
+    <section class="caracteristicas-container">
+        <div class="tarjeta-caracteristica">
+            <h3>• ENTRENA SEGURO</h3>
+            <p>Olvídate del miedo a fallar en el press de banca. Encuentra un spotter técnico que conozca tus límites.</p>
+        </div>
+        <div class="tarjeta-caracteristica">
+            <h3>• SUPERA TUS PRs</h3>
+            <p>El progreso real ocurre cuando empujas tus barras al máximo. Con asistencia, el fallo es solo un dato más.</p>
+        </div>
+        <div class="tarjeta-caracteristica">
+            <h3>• ECOSISTEMA LOCAL</h3>
+            <p>Conectá con atletas de tu misma zona y compartí la cultura del hierro en los templos de entrenamiento.</p>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GymBrosConnect - Creado por Máximo Rodrigo Olivera Nieva</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

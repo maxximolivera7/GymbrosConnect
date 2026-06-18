@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Spotter | GymBrosConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>GymBrosConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="perfiles.html">Comunidad</a></li>
+                <li><a href="rutinas.html">Muro de Rutinas</a></li>
+                <li><a href="academia.html">Academia Spotter</a></li>
+                <li><a href="mapa.html">Mapa de Gyms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<!-- CONTENEDOR PRINCIPAL HORIZONTAL -->
+    <section class="academia-layout">
+        
+        <!-- COLUMNA IZQUIERDA: EL SIMULADOR DE SPOTTEO -->
+        <div class="simulador-box">
+            <h2>• SIMULADOR INTERACTIVO</h2>
+            <p class="simulador-bajada">Poné a prueba tus reflejos y conocimientos biomecánicos. Elegí la respuesta correcta para asistir de forma segura.</p>
+
+            <!-- CASO 1: BANCA -->
+            <div class="caso-card">
+                <span class="caso-tag">• CASO #01 - PRESS DE BANCA</span>
+                <p class="caso-pregunta">Tu compañero clava la barra a mitad de camino en la tercera repetición con 120kg. La barra empieza a temblar y a descender lentamente hacia su esternón. ¿Qué hacés?</p>
+                <div class="opciones-grupo">
+                    <button class="btn-opcion" onclick="alert('❌ INCORRECTO: Si la barra ya está descendiendo, el atleta perdió el control. Esperar a que toque el pecho puede causar una lesión grave en las costillas o el esternón.')">A) Le grito para motivarlo y espero a que la barra toque su pecho para ayudarlo.</button>
+                    <button class="btn-opcion" onclick="alert('✅ ¡SPOTTEO PERFECTO!: Metés las manos de inmediato con agarre mixto (una palma arriba, otra abajo) y guiás la barra de forma vertical hacia los soportes, quitando el peso justo para que termine el recorrido de forma segura.')">B) Meto las manos de inmediato con agarre mixto y guío la barra verticalmente a los soportes.</button>
+                </div>
+            </div>
+
+            <!-- CASO 2: SENTADILLA -->
+            <div class="caso-card">
+                <span class="caso-tag">• CASO #02 - SENTADILLA TRASERA</span>
+                <p class="caso-pregunta">Un atleta está tirando un PR de 160kg, se queda sin aire en el fondo de la paralela y notas que sus rodillas colapsan severamente hacia adentro (valgo). ¿Cómo intervienes?</p>
+                <div class="opciones-grupo">
+                    <button class="btn-opcion" onclick="alert('✅ ¡SPOTTEO PERFECTO!: Te posicionás pegado detrás de su espalda, acompañando el recorrido, y si falla, rodeás su torso por debajo de las axilas para elevar la carga verticalmente usando la fuerza de tus piernas.')">A) Me pego a su espalda por detrás y elevo su torso rodeándolo por debajo de las axilas.</button>
+                    <button class="btn-opcion" onclick="alert('❌ INCORRECTO: Agarrar la barra desde los extremos desestabiliza el peso por completo y puede hacer que el atleta pierda el equilibrio, causando una lesión espinal catastrófica.')">B) Agarro la barra desde los extremos de los discos para intentar subir el peso desde los costados.</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: PANEL DE NIVEL Y EXAMEN -->
+        <div class="certificacion-box">
+            <h2>• PANEL DE RANGO</h2>
+            <div class="rango-status">
+                <p>Tu Rango Actual: <span class="rango-destacado">SPOTTER INICIADO</span></p>
+                <div class="barra-progreso"><div class="progreso-verde"></div></div>
+            </div>
+
+            <h3 class="titulo-form-academia">• SOLICITAR EXAMEN TÉCNICO</h3>
+            <p class="bajada-form-academia">Completá el formulario para agendar tu evaluación práctica presencial en los gimnasios adheridos de la zona.</p>
+            
+            <form class="academia-form">
+                <div class="campo-academia">
+                    <label>Nombre del Atleta:</label>
+                    <input type="text" placeholder="Ej: Máximo Olivera">
+                </div>
+
+                <div class="campo-academia">
+                    <label>Elegí el templo para rendir:</label>
+                    <select>
+                        <option>Coliseum Gym (Villa Crespo)</option>
+                        <option>SportClub (Caballito)</option>
+                        <option>Megatlon (Caballito)</option>
+                    </select>
+                </div>
+
+                <div class="campo-academia">
+                    <label>Especialidad a certificar:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" checked> Asistencia en Tres Grandes (Powerbuilding)</label>
+                        <label><input type="checkbox"> Seguridad en Barra Olímpica</label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-academia-submit" onclick="alert('¡Solicitud registrada! Nos contactamos para coordinar tu examen de Spotter Técnico.')">Agendar Examen Presencial</button>
+            </form>
+        </div>
+
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GymBrosConnect - Creado por Máximo Rodrigo Olivera Nieva</p>
+    </footer>
+</body>
+</html> 
